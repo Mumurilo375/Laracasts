@@ -20,7 +20,7 @@ class ProjectUzerSeeder extends Seeder
         foreach ($projects as $project) {
             // Associa entre 2 e 5 uzers aleatórios a cada project
             $randomUzers = $uzers->random(rand(2, 5))->pluck('id');
-            $project->users()->attach($randomUzers);
+            $project->uzers()->attach($randomUzers);
         }
     }
 }

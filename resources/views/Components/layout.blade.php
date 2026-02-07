@@ -75,8 +75,8 @@
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="text-center">
-        <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Welcome to my website</h1>
-        <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">You are on {{ $heading }} </p>
+        <h1 class="text-2xl font-semibold tracking-tight text-balance text-white sm:text-2xl">{{ $main }}</h1>
+        {{-- <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">You are on {{ $heading }} </p> --}}
       </div>
     </div>
     <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
@@ -84,8 +84,8 @@
     </div>
   </div>
 </div>
-
 {{ $slot }}
+
 
 
 </body>
