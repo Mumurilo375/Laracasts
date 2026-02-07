@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('project_id')->constrained()->cascadeOnDelete();
             $table->foreignId('uzer_id')->constrained()->cascadeOnDelete();
+            $table->boolean('is_manager')->default(false);
             $table->timestamps();
         });
     }
