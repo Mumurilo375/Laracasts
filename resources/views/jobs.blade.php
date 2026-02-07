@@ -11,6 +11,10 @@
                 </a>
 
         @endforeach
+
+        {{-- Pagination que o laravel da, serve para projetos com Tailwind--}} <div>
+             {{ $jobs->links() }} 
+        </div>
     </div>
 </x-slot:main>
 </x-layout>
