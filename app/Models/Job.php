@@ -11,7 +11,8 @@ class Job extends Model{
     use HasFactory;
     protected $table = 'job_listings';
 
-    protected $fillable = ['title', 'salary']; //colunas que podem receber dados de fora (por protecao)
+    // protected $guarded = [];
+    protected $fillable = ['employer_id','title', 'salary']; //colunas que podem receber dados de fora (por protecao)
 
     public function employer(){
         return $this->belongsTo(Employer::class);
